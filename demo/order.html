@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Order Page</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+	<div class="container vh-100">
+		<div class="row justify-content-center h-100">
+			<div class="card w-25 my-auto shadow">
+				<div class="card-header text-center bg-primary text-white">
+					<h2>Order Form</h2>
+				</div>
+				<div class="card-body">
+					<form action="" method="" onsubmit="required()">
+						<div class="form-group">
+							<label for="nameSurname" >Name Surname</label>
+							<input type="name" id="name" class="form-control" name="" />
+						</div>
+						<div class="form-group">
+							<label for="nameSurname">Adress</label>
+							<input type="adress" id="adress" class="form-control" name="" />
+						</div>
+						<div class="form-group">
+							<label for="tel">Phone </label>
+							<input type="tel" id="tel" class="form-control" name="" />
+						</div>
+						<div class="form-group">
+							<label for="email">E Mail</label>
+							<input type="email" id="email" class="form-control" name="" />
+						</div>
+						<input type="submit" class="btn btn-primary w-100" value="Sent Order" name="">
+					</form>
+				</div>
+				<div class="card-footer text-right">
+					<small>&copy; Erdem Bestas</small>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+    function required()
+{
+var empt = document.form1.text1.value;
+if (empt === "")
+{
+alert("Please input a Value");
+return false;
+}
+else 
+{
+alert('Code has accepted : you can try another');
+return true; 
+}
+}
+    </script>
+</body>
+</html>
